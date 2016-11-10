@@ -1,0 +1,45 @@
+<div class="columnsContainer" ng-repeat="player in tennis.players">
+
+	<div class="leftColumn">
+	
+		{{ player[0].name }} {{ player[0].game }}
+		<br/><br/>
+		
+		Point : {{ player[0].tennisScore }}
+		<br/>
+		
+		Jeux gagn&#233;s: {{ player[0].games }}
+		<br/>
+		
+		Sets gagn&#233;s: {{ player[0].sets }}
+		<br/>
+		
+		Matchs gagn&#233;s: {{ player[0].matches }}
+		<br/><br/>
+		
+		<input type="button" ng-click="tennis.setScore(0)" class="button" value="SCORE">
+		
+	</div>	
+		
+	<div class="rightColumn">	
+		
+		{{ player[1].name }} {{ player[1].game }}
+		<br/><br/>
+		
+		Point : {{ player[1].tennisScore }}		 
+		<br/>
+		
+		Jeux gagn&#233;s: {{ player[1].games }}
+		<br/>
+		
+		Sets gagn&#233;s: {{ player[1].sets }}
+		<br/>
+		
+		Matchs gagn&#233;s: {{ player[1].matches }}
+		<br/><br/>
+					
+		<input type="button" ng-click="tennis.setScore(1)" class="button" value="Score">
+		
+	</div>	
+			
+</div>
